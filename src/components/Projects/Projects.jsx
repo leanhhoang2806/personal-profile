@@ -6,6 +6,8 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import classes from './Projects.module.css';
 import github from '../images/github.png';
 
+import { FaSchool } from 'react-icons/fa';
+
 // Web projects
 const cardItem = [
   {
@@ -51,9 +53,32 @@ export default function Projects() {
         <span className={classes.head}>MY WORK</span>
         <h2 className={classes.heading}>PROJECTS</h2>
         <ul className={classes.cards}>
-          {cardItem.map((item) => {
-            return getProjectCard(item);
-          })}
+        <ScrollAnimation
+          offset={0}
+          animateIn='fadeInLeft'
+          duration={2.4}
+          animateOnce={true}
+          initiallyVisible={true}
+        >
+          <article className={classes.timeline_entry}>
+            <div className={`${classes.timeline_icon} ${classes.timeline_icon_5}`}>
+              <FaSchool />
+            </div>
+            <div className={classes.label}>
+              <h2>
+                Distributed training for OASIS Alzheimer Detection - accuracy 96%
+              </h2>
+              <p>
+                Problem statement: Binarily Classified an MRI brain scan into either Malignant or Benign   <br></br>
+                1. Need distributed training because image cost a lot of time to train using traditional CPU <br></br>
+                2. Enabled GPU on training worker. Using Tensorflow to coordinate master and worker to communicate on cost function <br></br>
+                3. Once Neural Network is identified. Using a grid-search for optimizing hyper-parameters such as layers, steps, learning rate  <br></br>
+                4. Achieved accuracy of 96% <br></br>
+                5. More detail found here (<a href="https://github.com/leanhhoang2806/machine-learning-for-all/blob/main/README.md"> Code Reference</a>)
+              </p>
+            </div>
+          </article>
+        </ScrollAnimation>
         </ul>
       </ScrollAnimation>
     </div>

@@ -18,8 +18,8 @@ class About extends Component {
           <h2 className={classes.heading}>Who Am I?</h2>
           <div className={classes.About}>
             <p>
-            I am a seasoned Senior Software Engineer with over 8+ years of experience, currently excelling in a role at EvidentID, 
-            where I lead critical initiatives in scalability, architecture, 
+            I am a seasoned Senior Software Engineer with over 7+ years of experience.
+            I have led critical initiatives in scalability, architecture, 
             and performance optimization. 
             My technical proficiency spans languages such as JavaScript, Java, and Python, 
             coupled with expertise in databases like Postgres and MongoDB. Notably, 

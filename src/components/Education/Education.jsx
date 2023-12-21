@@ -4,7 +4,6 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css/animate.min.css';
 import { MdSchool } from 'react-icons/md';
 import { MdWork } from 'react-icons/md';
-import { FaSchool } from 'react-icons/fa';
 
 class Education extends Component {
   render() {
